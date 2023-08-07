@@ -2,8 +2,8 @@ body{
   text-align: center;
 }
 .box{
-  height: 250px;
-  width: 250px;
+  height: 20vw;
+  width: 20vw;
   background-color: aqua;
   border-radius: 20%;
   border: 5px solid black;
@@ -23,4 +23,7 @@ body{
   background-color:#819ff9;
 }.green{
   background-color:#63aac0;
+}
+.flash{
+  background-color: #fff;
 }
