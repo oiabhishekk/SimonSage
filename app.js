@@ -2,13 +2,25 @@ let gameSeq=[];
 let userSeq=[];
 let Gamestart=false;
 let level=0;
- document.addEventListener("keypress" ,function(){
-  if(Gamestart==false){
-    Gamestart=true;
-    levelup();
+if(Gamestart==false){
+  document.addEventListener("click" ,function(){
+    if(Gamestart==false){
+      Gamestart=true;
+      levelup();
+  
+    }
+   });
+ 
+   document.addEventListener("keypress" ,function(){
+    if(Gamestart==false){
+      Gamestart=true;
+      levelup();
+  
+    }
+   });
+}
 
-  }
- });
+ 
  function buttonFlash(btn){
   btn.classList.add("flash");
   setTimeout(function(){
@@ -58,7 +70,9 @@ for(btn of btns){
 
 }
 function reset(){
-  Gamestart=false;
+  setTimeout(function(){
+    Gamestart=false;
+  },1000)
   gameSeq=[];
   userSeq=[];
   level=0;
